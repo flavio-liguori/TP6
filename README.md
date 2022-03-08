@@ -33,7 +33,9 @@ Dans cet exercice on va réorganiser le serveur pour qu’il puisse communiquer 
    
 Pour gérer plusieurs connexions simultanément, le serveur va exécuter une tâche différente pour chaque client qui se connecte. On ajoute donc une classe `Connexion` qui implémente `Runnable` dont la méthode `run()` est responsable de la communication avec un client donné. La méthode `main()` du serveur se contente donc maintenant de créer un `ExecutorService` puis d’effectuer une boucle infinie dans laquelle le serveur écoute sur le port 6020 et, quand un client s’y connecte, ouvre une socket et exécute une nouvelle `Connexion` qui va communiquer avec le client sur la socket nouvellement crée. La figure suivante illustre ce fonctionnement.
 
-![Diagramme de fonctionnement](ressources/diagramme.png)
+<div align="center">
+   <img alt="diagramme de fonctionnement" src="ressources/diagramme.png" width="50%">
+</div>
 
 2. Écrivez la classe `Connexion` implémentant l’interface `Runnable` dont le constructeur prend en argument une `Socket` (qui aura déjà été ouverte et connectée au client) et dont la méthode `run()` se charge de la communication avec le client.
 
