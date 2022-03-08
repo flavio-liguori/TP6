@@ -1,7 +1,6 @@
 # TD6 - Client-Serveur
 
-TODO: lien classroom
-Lien GitHub Classroom pour [faire un fork privé du TP]().
+Lien GitHub Classroom pour [faire un fork privé du TP](https://classroom.github.com/a/NBwd5xND).
 
 Le but de ce TD est de réaliser une application client-serveur simple. Dans cette application, il y aura deux exécutables. L’un est le serveur qui attend des requêtes de la part des clients et pourra dialoguer simultanément avec plusieurs clients. L’autre est le client qui envoie ses requêtes au serveur.
 
