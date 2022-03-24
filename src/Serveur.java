@@ -18,7 +18,17 @@ public class Serveur {
         PrintWriter outs = new PrintWriter(
                 new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())), true);
 
-        // boucle du serveur à compléter ici
+        String message_client = "message" ;
+        while(message_client !=null){
+           message_client = ins.readLine();
+           System.out.println("Client : "+message_client);
+           String s;
+           s = "reçu";
+           outs.println(s);
+           outs.flush(); 
+        }
+        
+        
 
         ins.close();
         outs.close();
